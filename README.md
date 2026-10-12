@@ -1,4 +1,4 @@
-# Pagila SQL Practice :
+# Pagila SQL Practice : My first DE project 
 
 A set of SQL exercises solved against the [Pagila](https://github.com/devrimgunduz/pagila) sample database (PostgreSQL's version of Sakila — a fictional DVD rental store). This repo is a personal practice log, organized from basic queries to window functions.
 
