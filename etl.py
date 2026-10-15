@@ -11,12 +11,10 @@ def extract(engine):
 
 
 def transform(customers, payments):
-    # Cleaning
     print('Missing values:', customers.isna().sum().sum())
     print('Duplicate rows:', customers.duplicated().sum())
     customers['email'] = customers['email'].str.lower()
 
-    # Total payment per customer
     summary = payments.groupby('customer_id').agg(
         total_spent=('amount', 'sum'),
         num_payments=('amount', 'count'),
@@ -45,4 +43,3 @@ def main():
 
 if __name__ == '__main__':
     main()
- 
